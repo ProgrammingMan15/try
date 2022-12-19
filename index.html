@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+<body>
+  <div class="main">
+    <header id="header">
+        <div class="logo">
+            Tutor
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+   <h1>The Hub Of Tutorials</h1>
+    </div>
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe ut iure error repellat! Cumque autem, eos modi commodi inventore velit id ratione possimus error quia qui sunt et non voluptate. Et culpa autem, animi, enim repellendus exercitationem obcaecati illum ipsum deleniti a similique iusto quaerat dolores dolorum reprehenderit iure suscipit ut laboriosam, dolorem ea voluptatibus odio? Totam, dolores delectus qui voluptatum soluta molestias illo neque ab labore accusantium voluptas, aliquid placeat natus inventore autem nulla repellendus sint dolor deserunt libero repudiandae consequuntur commodi porro? Adipisci rem consectetur laborum voluptatibus, non nemo aut vitae fuga iure ex nihil. Libero, esse ullam, voluptatem quibusdam consectetur ducimus laboriosam repellendus porro quis ad, impedit error vel. Velit perspiciatis illum expedita. Numquam suscipit minima molestias accusamus? Porro et fuga voluptas quis dignissimos alias, ipsum dolor minima. Recusandae magni, unde corrupti veniam, commodi ducimus ipsam consequatur quas odit natus animi ipsa inventore placeat rem laudantium?</p>
+    </div>
+
+  </div>
+
+  <!-- javascript -->
+  <script>
+    var header=document.getElementById("header");
+    window.addEventListener("scroll",function(){
+        if(window.scrollY > header.offsetHeight){
+            header.classList.add("active")
+        }else{
+            header.classList.remove("active")
+        }
+    })
+  </script>
+
+</body>
+</html>
